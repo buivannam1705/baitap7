@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+<input type="text" id="a">
+<input type="text" id="b">
+<button onclick="add()">Cộng</button>
+<button onclick="sub()">Trừ</button>
+<button onclick="multi()">NHân</button>
+<button onclick="divi()">Chia</button>
+<div id="tinh">Đây là kết quả</div>
+<script>
+  function add() {
+    let a = document.getElementById("a").value;
+    let b = document.getElementById("b").value;
+    let c = Number(a) + Number(b);
+    document.getElementById('tinh').innerHTML = c
+  }
+  function sub() {
+    let a = document.getElementById("a").value;
+    let b = document.getElementById("b").value;
+    let e = Number(a) - Number(b);
+    document.getElementById('tinh').innerHTML = e
+  }
+</script>
+</body>
+</html>

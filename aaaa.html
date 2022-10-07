@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+  <tr>
+    <td >
+      <input type="text" id="a">
+    </td>
+    <td >
+      <input type="text" id="b">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <button onclick="add()">Cong</button></td>
+    <td>
+      <button onclick="sub()">Tru</button></td>
+    <td>
+      <button onclick="mul()">Nhan</button></td>
+    <td>
+      <button onclick="Divi()">Chia</button></td>
+  </tr>
+
+</table>
+<div id = 'abc'></div>
+<script>
+  function add() {
+    let t = document.getElementById('a').value
+    let g = document.getElementById('b').value
+    let c = Number(t)+Number(g)
+    document.getElementById('abc').innerHTML=c;
+
+  }
+  function sub() {
+    let r = document.getElementById('a').value
+    let y = document.getElementById('b').value
+    let u = Number(r)-Number(y)
+    document.getElementById('abc').innerHTML=u;
+  }
+  function mul() {
+    let i = document.getElementById('a').value
+    let o = document.getElementById('b').value
+    let p = Number(i)*Number(o)
+    document.getElementById('abc').innerHTML=p;
+  }
+  function Divi() {
+    let g = document.getElementById('a').value
+    let h = document.getElementById('b').value
+    let k = Number(g)/Number(h)
+    document.getElementById('abc').innerHTML=k;
+  }
+</script>
+</body>
+</html>

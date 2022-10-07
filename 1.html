@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+  <tr>
+    <th>
+      độ 0C
+    </th>
+  </tr>
+    <tr>
+        <td>
+            <input type="text" id='do'>
+        </td>
+
+    </tr>
+</table>
+<button onclick="Nam()">Đổi sang độ F</button>
+<script>
+function Nam(){
+    let a = document.getElementById('do').value
+    let  F= (9*a-32*5)/5
+    document.write('='+F)
+}
+</script>
+</body>
+</html>

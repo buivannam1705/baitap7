@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Toan</th>
+        <th>Ly</th>
+        <th>Hoa</th>
+    </tr>
+    <tr>
+        <td>
+            <input type="text" id="Toan">
+        </td>
+        <td>
+            <input type="text" id="Ly">
+        </td>
+        <td>
+            <input type="text" id="Hoa">
+        </td>
+    </tr>
+</table>
+<button onclick="d()"><p> tong
+</p>
+</button>
+
+
+<script>
+    function d() {
+        let a = document.getElementById('Toan').value
+        let b = document.getElementById('Ly').value
+        let c = document.getElementById('Hoa').value
+        let d = Number(a) + Number(b) + Number(c)
+        document.write('=' + d)
+    }
+
+</script>
+</body>
+</html>
